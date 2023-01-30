@@ -2,25 +2,30 @@
 <html lang="English">
 
 <head>
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
     <title>
         My Resume
     </title>
 </head>
+<!-- Body begins -->
+<!-- contains: name, portrait -->
 
 <body>
     <div class="bio">
-        <h1>Resume</h1>
         <h2>Justin Stutler</h2>
-        <img src="Selfie.jpg" alt=":)" class="selfie">
-        <h2>USF Student of Information Science</h2>
-    </div>    
+        <a href="selfportrait.jpg" target="new">
+            <img src="selfportrait.jpg" alt=":)" class="selfie">
+        </a>
+        <i>
+            <!-- Contains: bio, edu, skills, table, links -->
+            <p>A USF student studying Information Science and Web Development.
+                <br>Interested in all things technology.
+                <br>
+            </p>
+        </i>
+    </div>
     <hr>
-    <h3>Bio</h3>
-    <p>A college student studying Information Science and Web Development at USF.
-        <br>Interested in all things technology.
-        <br>
-    </p>
 
     <h3>Education</h3>
     <ul>
@@ -34,30 +39,36 @@
     <h3>Skills</h3>
     <dl>
         <dt>HTML</dt>
-        <dd>a useful tool for constructing web pages</dd>
+        <dd>constructing web pages</dd>
     </dl>
     <dl>
         <dt>CSS</dt>
-        <dd>a useful tool for styling web pages</dd>
+        <dd>styling web pages</dd>
     </dl>
     <dl>
         <dt>Javascript</dt>
-        <dd>a useful tool for web page interaction</dd>
+        <dd>web page interaction</dd>
     </dl>
     <dl>
         <dt>SQL</dt>
-        <dd>a useful tool for interacting with databases</dd>
+        <dd>databases</dd>
+    </dl>
+    <dl>
+        <dt>R</dt>
+        <dd>data science</dd>
     </dl>
 
     <h3>Work Experience</h3>
     <dl>
-        <dt>MagMutual - 2020-2021</dt>
+        <dt><a href="https://www.magmutual.com/">MagMutual</a> - 2020-2021</dt>
         <dd>Contract Web Developer</dd>
+        <dd>Intern</dd>
     </dl>
     <dl>
         <dt>Pie Hole - 2015 - 2018</dt>
-        <dd>Baker</dd>
         <dd>Manager</dd>
+        <dd>Baker</dd>
     </dl>
 </body>
+
 </html>

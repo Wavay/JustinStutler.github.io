@@ -1,8 +1,15 @@
+
+
 .bio {
     text-align: center;
+    font-family: arial;
 }
 
 .selfie {
     height: 400px;
     width: 300px;
+}
+
+.course_table{
+    text-align: center;
 }
