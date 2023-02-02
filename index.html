@@ -11,19 +11,18 @@
     </title>
 </head>
 <!-- Body begins -->
-<!-- contains: name, portrait -->
 
 <body>
+    <!-- Contains: bio, edu, skills, table, links -->
+
     <div class="bio">
         <a href="selfportrait.jpg" target="new">
             <img src="selfportrait.jpg" alt=":)" class="selfie">
         </a>
-        <h2>Justin Stutler</h2>
+        <h2 class="hack" data-value="Justin Stutler">Justin Stutler</h2>
         <i>
-            <!-- Contains: bio, edu, skills, table, links -->
-            <p>A USF student studying Information Science and Web Development.
+            <p data-value="A USF student studying Information Science and Web Development. Interested in all things technology." class="hack">A USF student studying Information Science and Web Development.
                 <br>Interested in all things technology.
-                <br>
             </p>
         </i>
         <a class="link-logo" href="https://github.com/JustinStutler" target="new">
@@ -31,35 +30,35 @@
         </a>
         <i id="ToggleBtn" class="fa fa-envelope" style="font-size:42px"></i>
         <div id="ToggleTxt" style="display:none;">
-            <p class="email">JStutler@usf.edu</p>
-            <p class="email">StutlerJustin@gmail.com</p>
+            <p data-value="JStutler@usf.edu" class="email hack" >JStutler@usf.edu</p>
+            <p data-value="StutlerJustin@gmail.com" class="email hack">StutlerJustin@gmail.com</p>
         </div>
     </div>
+    <!-- dividing line -->
     <hr class="fade">
     <div class="Experience">
-        <h3>Education</h3>
-            <p>Information Science at University of South Florida 2022 - Current</p>
-            <p>Computer Science at Kennesaw State University 2019 - 2021</p>
-            <p>Computer Science at UNG Oconee 2018 - 2019</p>
-            <p>Milton High School 2018</p>
+        <h3 data-value="Education" class="hack">Education</h3>
+        <p data-value="Information Science at University of South Florida 2022 - Current" class="hack">Information Science at University of South Florida 2022 - Current</p>
+        <p data-value="Computer Science at Kennesaw State University 2019 - 2021" class="hack">Computer Science at Kennesaw State University 2019 - 2021</p>
+        <p data-value="Computer Science at UNG Oconee 2018 - 2019" class="hack">Computer Science at UNG Oconee 2018 - 2019</p>
+        <p data-value="Milton High School 2018" class="hack">Milton High School 2018</p>
 
-        
-        <h3>Skills</h3>
-        <p id="test" class="skill" data-value="HTML">HTML</p>
-        <p class="skill-description">constructing web pages</p>
-        <p class="skill">CSS</p>
-        <p class="skill-description">styling web pages</p>
-        <p class="skill">Javascript</p>
-        <p class="skill-description">web page interaction</p>
-        <p class="skill">SQL</p>
-        <p class="skill-description">database interaction</p>
-        <p class="skill">R</p>
-        <p class="skill-description">Data Science</p>
-        <h3>Work Experience</h3>
-        <p class="job-company"><a class="link-logo" href="https://www.magmutual.com/">MagMutual</a> | 2020-2021</p>
-        <p class="job-title">Intern → Contract Web Developer</p>
-        <p class="job-company">Pie Hole | 2015 - 2018</p>
-        <p class="job-title">Baker → Manager</p>
+        <h3 data-value="Skills" class="hack">Skills</h3>
+        <p data-value="HTML" class="skill hack">HTML</p>
+        <p data-value="constructing web pages" class="skill-description hack">constructing web pages</p>
+        <p data-value="CSS" class="skill hack">CSS</p>
+        <p data-value="styling web pages" class="skill-description hack">styling web pages</p>
+        <p data-value="Javascript" class="skill hack">Javascript</p>
+        <p data-value="web page interaction" class="skill-description hack">web page interaction</p>
+        <p data-value="SQL" class="skill hack">SQL</p>
+        <p data-value="database interaction" class="skill-description hack">database interaction</p>
+        <p data-value="R" class="skill hack">R</p>
+        <p data-value="Data Science" class="skill-description hack">Data Science</p>
+        <h3 data-value="Work Experience" class="hack">Work Experience</h3>
+        <p data-value="Magmutal | 2020-2021" class="hack job-company"><a class="link-logo" href="https://www.magmutual.com/">MagMutual</a> | 2020-2021</p>
+        <p data-value="Intern → Contract Web Developer" class="hack job-title">Intern → Contract Web Developer</p>
+        <p data-value="Pie Hole | 2015 - 2018" class="hack job-company">Pie Hole | 2015 - 2018</p>
+        <p data-value="Baker → Manager" class="hack job-title">Baker → Manager</p>
     </div>
     <script src="index.js"></script>
 </body>
