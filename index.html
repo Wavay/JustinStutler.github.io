@@ -4,6 +4,8 @@
 <head>
     <!-- link css -->
     <link rel="stylesheet" href="style.css">
+    <!-- link fontawesome for github logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
         My Resume
     </title>
@@ -13,10 +15,10 @@
 
 <body>
     <div class="bio">
-        <h2>Justin Stutler</h2>
         <a href="selfportrait.jpg" target="new">
             <img src="selfportrait.jpg" alt=":)" class="selfie">
         </a>
+        <h2>Justin Stutler</h2>
         <i>
             <!-- Contains: bio, edu, skills, table, links -->
             <p>A USF student studying Information Science and Web Development.
@@ -24,51 +26,42 @@
                 <br>
             </p>
         </i>
+        <a class="link-logo" href="https://github.com/JustinStutler" target="new">
+            <i class="fa fa-github" style="font-size:42px"></i>
+        </a>
+        <i id="ToggleBtn" class="fa fa-envelope" style="font-size:42px"></i>
+        <div id="ToggleTxt" style="display:none;">
+            <p class="email">JStutler@usf.edu</p>
+            <p class="email">StutlerJustin@gmail.com</p>
+        </div>
     </div>
-    <hr>
+    <hr class="fade">
+    <div class="Experience">
+        <h3>Education</h3>
+            <p>Information Science at University of South Florida 2022 - Current</p>
+            <p>Computer Science at Kennesaw State University 2019 - 2021</p>
+            <p>Computer Science at UNG Oconee 2018 - 2019</p>
+            <p>Milton High School 2018</p>
 
-    <h3>Education</h3>
-    <ul>
-        <li>University of South Florida 2022 - current</li>
-        <li>Computer Science at Kennesaw State University 2019 - 2021</li>
-        <li>Computer Science at UNG Oconee 2018 - 2019</li>
-        <li>Milton High School 2018</li>
-
-    </ul>
-
-    <h3>Skills</h3>
-    <dl>
-        <dt>HTML</dt>
-        <dd>constructing web pages</dd>
-    </dl>
-    <dl>
-        <dt>CSS</dt>
-        <dd>styling web pages</dd>
-    </dl>
-    <dl>
-        <dt>Javascript</dt>
-        <dd>web page interaction</dd>
-    </dl>
-    <dl>
-        <dt>SQL</dt>
-        <dd>databases</dd>
-    </dl>
-    <dl>
-        <dt>R</dt>
-        <dd>data science</dd>
-    </dl>
-
-    <h3>Work Experience</h3>
-    <dl>
-        <dt><a href="https://www.magmutual.com/">MagMutual</a> - 2020-2021</dt>
-        <dd>Contract Web Developer</dd>
-        <dd>Intern</dd>
-    </dl>
-    <dl>
-        <dt>Pie Hole - 2015 - 2018</dt>
-        <dd>Manager</dd>
-        <dd>Baker</dd>
-    </dl>
+        
+        <h3>Skills</h3>
+        <p class="skill">HTML</p>
+        <p class="skill-description">constructing web pages</p>
+        <p class="skill">CSS</p>
+        <p class="skill-description">styling web pages</p>
+        <p class="skill">Javascript</p>
+        <p class="skill-description">web page interaction</p>
+        <p class="skill">SQL</p>
+        <p class="skill-description">database interaction</p>
+        <p class="skill">R</p>
+        <p class="skill-description">Data Science</p>
+        <h3>Work Experience</h3>
+        <p class="job-company"><a class="link-logo" href="https://www.magmutual.com/">MagMutual</a> | 2020-2021</p>
+        <p class="job-title">Intern → Contract Web Developer</p>
+        <p class="job-company">Pie Hole | 2015 - 2018</p>
+        <p class="job-title">Baker → Manager</p>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
