@@ -50,6 +50,8 @@ p, li, .bio {
 .link-logo {
     color: black;
     text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #textToToggle {
@@ -71,3 +73,8 @@ p, li, .bio {
 #test {
     font-family: "Space Mono", monospace;
 }
+
+.SKILLS, .WORKEXP {
+    padding-top: 10px;
+}
+
