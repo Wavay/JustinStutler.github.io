@@ -1,78 +1,54 @@
 <!DOCTYPE html>
-<html lang="English">
-
+<html lang="en">
 <head>
-    <!-- link css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- link fontawesome for github logo -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>
-        My Resume
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Resume Website</title>
 </head>
-<!-- Body begins -->
-
 <body>
-    <!-- Contains: bio, edu, skills, table, links -->
-
-    <div class="bio">
-        <!-- selfie
-        <a href="selfportrait.jpg" target="new">
-            <img src="selfportrait.jpg" alt=":)" class="selfie">
-        </a>
-    -->
-        <a href="selfportrait.jpg" target="new">
-            <img src="selfportrait.jpg" alt=":)" class="bcard">
-        </a>
-        <div class="contact">
-            <h2 class="hack" data-value="Justin Stutler">Justin Stutler</h2>
-            <a class="link-logo" href="https://github.com/JustinStutler" target="new">
-                <i class="fa fa-github" style="font-size:42px"></i>
-            </a>
-            <i id="ToggleBtn" class="fa fa-envelope" style="font-size:42px"></i>
-            <div id="ToggleTxt" style="display:none;">
-                <p data-value="JStutler@usf.edu" class="email hack">JStutler@usf.edu</p>
-                <p data-value="StutlerJustin@gmail.com" class="email hack">StutlerJustin@gmail.com</p>
-            </div>
+    <header>
+        <div class="header-content">
+          <div class="header-text">
+            <h1>Justin Stutler</h1>
+            <p>USF Student of Information Science and Web Development</p>
+          </div>
+          <div class="header-image">
+            <img src="headshot.png" alt=":)">
+          </div>
         </div>
-        <i>
-            <p data-value="A USF student studying Information Science and Web Development. Interested in all things technology."
-                class="hack">A USF student studying Information Science and Web Development.
-                <br>Interested in all things technology.
-            </p>
-        </i>
-    </div>
-    <!-- dividing line -->
-    <hr class="fade">
-    <div class="Experience">
-        <h3 data-value="Education" class="hack">Education</h3>
-        <p data-value="Information Science at University of South Florida 2022 - Current" class="hack">Information
-            Science at University of South Florida 2022 - Current</p>
-        <p data-value="Dean's List | Computer Science at Kennesaw State University 2019 - 2021" class="hack">Dean's List | Computer Science at
-            Kennesaw State University 2019 - 2021</p>
-        <p data-value="Computer Science at UNG Oconee 2018 - 2019" class="hack">Computer Science at UNG Oconee 2018 -
-            2019</p>
-        <p data-value="Milton High School 2018" class="hack">Milton High School 2018</p>
+      </header>
 
-        <h3 data-value="Skills" class="hack SKILLS">Skills</h3>
-        <p data-value="HTML" class="skill hack">HTML</p>
-        <p data-value="constructing web pages" class="skill-description hack">constructing web pages</p>
-        <p data-value="CSS" class="skill hack">CSS</p>
-        <p data-value="styling web pages" class="skill-description hack">styling web pages</p>
-        <p data-value="Javascript" class="skill hack">Javascript</p>
-        <p data-value="web page interaction" class="skill-description hack">web page interaction</p>
-        <p data-value="SQL" class="skill hack">SQL</p>
-        <p data-value="database interaction" class="skill-description hack">database interaction</p>
-        <p data-value="R" class="skill hack">R</p>
-        <p data-value="Data Science" class="skill-description hack">Data Science</p>
-        <h3 data-value="Work Experience" class="hack WORKEXP">Work Experience</h3>
-        <p data-value="Magmutal | 2020-2021" class="hack job-company"><a class="link-logo"
-                href="https://www.magmutual.com/">MagMutual</a> | 2020-2021</p>
-        <p data-value="Intern → Contract Web Developer" class="hack job-title">Intern → Contract Web Developer</p>
-        <p data-value="Pie Hole | 2015 - 2018" class="hack job-company">Pie Hole | 2015 - 2018</p>
-        <p data-value="Baker → Manager" class="hack job-title">Baker → Manager</p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: Javascript, HTML, CSS, SQL, Python</li>
+      <li>Misc: Git, react.js, bootstrap, redux, axios, agile, jira, confluence, kanban board, rest API</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>MagMutual Insurance - Intern/ Contractor</h3>
+      <p>May 2020 - December 2020</p>
+      <p>This was my first experience coding as a developer in an agile workflow. I began the internship with no knowledge of Javascript, Html, CSS, or SQL. I learned enough over the summer to be hired on as a full stack javascript contractor to build dynamic web applications.</p>
     </div>
-    <script src="index.js"></script>
+    <div class="job">
+      <h3>PieHole - Baker/ Manager</h3>
+      <p>2016-2018</p>
+      <p>Beginning as a baker, I learned many skills such as communication, problem-solving, time management, how to work well under pressure, and teamwork. Eventually, I became a manager and learned how to teach and lead others. Thanksgiving was particularly challenging with the large amount of orders, but this gave me the opportunity to lead a small team of 4 through the holidays.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>University of South Florida: Bachelor of Information Science - Enrolled (Web Development) (2022-2024, 3.36 GPA)</li>
+      <li>Kennesaw State University: Dean's List | Bachelor of Computer Science - Incomplete (2019-2021, 3.75 GPA)</li>
+      <li>University of North Georgia: Bachelor of Computer Science - Incomplete (2018-2019)</li>
+      <li>Milton High School: Computer Science Focus (Graduated Class of 2018, 3.89 GPA)</li>
+    </ul>
+  </section>
 </body>
-
 </html>
