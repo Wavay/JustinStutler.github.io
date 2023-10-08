@@ -1,0 +1,102 @@
+/* Set the height of the body to 100% to fill the entire viewport */
+body {
+    height: 100%;
+    background-color: #F9E8D8;
+  }
+  
+  /* Style the header */
+  .Header {
+    background-color: #F9E8D8;
+    color: #006747;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-decoration: none;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    height: auto;
+  }
+
+  /* Style hr */
+  hr {
+    height: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Style the left panel */
+  .LeftPanel {
+    padding-left: 5px;
+    background-color: #CFC493;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 150px;
+    min-height: 100%;
+    z-index: 0;
+  }
+  
+  /* Style the middle panel */
+  .MidPanel {
+    margin-top: 80px;
+    margin-left: 147px;
+    margin-right: 147px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9E8D8;
+    color: #00896E;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    left: 200px;
+    top: 50px;
+    right: 200px;
+    min-height: 100%;
+    overflow: auto; /* Allow scrolling within the panel */
+  }
+  
+  /* Style the right panel */
+  .RightPanel {
+    padding-left: 5px;
+    z-index: 0;
+    background-color: #CFC493;
+    position: absolute;
+    min-height: 100%;
+    right: 0;
+    top: 50px;
+    width: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .RightPanel {
+      display: none;
+      visibility: hidden;
+    }
+    .MidPanel {
+        margin-right: -8px;
+    }
+  }
+
+  /* Set the z-index of the body content to be lower than the header */
+  body > * {
+    z-index: 0;
+  }
+  
+  /* Style the h1 tag to be green */
+h1 {
+    color: green;
+  }
+  
+  /* Style the p tag to be green */
+  p {
+    color: green;
+  }
+  

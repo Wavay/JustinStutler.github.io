@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Contact</title>
+    <script>
+        function submitForm() {
+            var i = document.thisForm.fullname.value + "\n" + document.thisForm.email.value
+            i = i + "\n\n" + document.thisForm.subject.value
+            var p = ""
+            switch (document.thisForm.priority.value) {
+                case "none":
+                    p = "nothing is selected"
+                    break
+                case "urgent":
+                    p = "UGRENT!"
+                    break
+                case "high":
+                    p = "High"
+                    break
+                case "medium":
+                    p = "Medium"
+                    break
+                case "low":
+                    p = "Low"
+                    break
+                case "spam":
+                    p = "Spam"
+                    break
+            }
+            i = i + "Priority: " + p + "\n\n" + document.thisForm.message.value
+            document.thisForm.sentMessage.value = i
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="contact">
+        <form name="thisForm">
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="form-header">Use This Form to Contact Me</th>
+                </tr>
+                <tr>
+                    <td>Full Name:</td>
+                    <td><input type="text" size="40" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type="text" size="40" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Subject:</td>
+                    <td><input type="text" size="40" name="subject"></td>
+                </tr>
+                <tr>
+                    <td>Priority:</td>
+                    <td>
+                        <select name="priority" id="priority">
+                            <option value="none">...Choose an option...</option>
+                            <option value="urgent">URGENT!</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                            <option value="spam">SPAM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Message: </td>
+                    <td><textarea name="message" rows="4" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Clear Form"></td>
+                    <td><input type="button" value="Send Message" onclick="submitForm()"></td>
+                </tr>
+                <tr>
+                    <td><br><br></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" class="form-header">If your message passes inspection, it was be displayed below:</th>
+                </tr>   
+
+                <tr>
+                    <td valign="top">Message Sent:</td>
+                    <td><textarea name="sentMessage" rows="12" cols="40" readonly></textarea></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
