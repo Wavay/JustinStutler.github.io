@@ -16,28 +16,34 @@
             <a href="resume.html">Resume</a>
         </nav>
     </div>
-    
+
     <div class="aboutText">
         <img src="donutSelfie.jpg" alt="vpic" width="30%" height="30%">
         <h2>Hi, I'm Justin Stutler</h2>
         <p>Explore my time at USF below</p>
     </div>
     <div class="photo_btns">
-        <button onclick="toBJJ()">
-            <img src="bjj_verticle1.jpg" alt="vpic" width="80%" height="80%">
+        <button class="btn" onclick="toBJJ()">
+            <img src="bjj_verticle1.jpg" alt="vpic" height="100%" width="100%">
             <h2>Brazilian Jiu Jitsu</h2>
         </button>
-        
+
         <script>
             function toBJJ() {
                 window.location.href = "bjj.html";
             }
         </script>
 
-        <button>
-            <img src="donutSelfie.jpg" alt="vpic" width="30%" height="30%">
-            <h2>example text</h2>
+        <button class="btn" onclick="toIPE()">
+            <img src="ipe_selfie.jpg" alt="vpic" height="100%" width="100%">
+            <h2>Information Policy & Ethics</h2>
         </button>
+
+        <script>
+            function toIPE() {
+                window.location.href = "info_pe.html";
+            }
+        </script>
     </div>
 </body>
 

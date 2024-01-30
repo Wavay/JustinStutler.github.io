@@ -18,6 +18,14 @@ nav a {
 
 .photo_btns {
     display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn {
+    width: 400px;
+    height: 400px;
+    margin: 50px;
 }
 
 .vpic, .hpic {
@@ -27,4 +35,19 @@ nav a {
 
 .PageTop {
     text-align: center;
+}
+
+.pdfBtns {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pdfDisplay {
+    text-align: center;
+}
+
+.pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
